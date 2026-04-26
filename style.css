@@ -11,6 +11,7 @@
   --secondarytext: #A1A1AA;
   --border: #161616;
   --bg: #161616;
+  --bglight: #1e1e1e;
   --accent: #e7c159;
   --radius: 8px;
   --shadow: 0 8px 20px rgba(181, 127, 228, 0.15);
@@ -50,6 +51,12 @@ header {
   justify-content: space-between;
   padding: 0.5rem 1rem;
   background: var(--bg);
+}
+
+.festival-name {
+  text-decoration: none;
+  color: var(--text);
+  font-size: clamp(16px,2rem,40px);
 }
 
 .festival-name:hover {
@@ -122,7 +129,7 @@ header {
 }
 
 .edition:hover {
-  background-color: var(--primary-light);
+  background-color: var(--bglight);
 }
 
 .introtitle {
@@ -259,7 +266,7 @@ tbody tr {
 }
 
 tbody tr:hover {
-  background-color: #1e1e1e;
+  background-color: var(--bglight);
 }
 
 tbody tr:hover td {
