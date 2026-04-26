@@ -1,8 +1,5 @@
 /* ════════════════════════════════════════════════════════
    VARIABLES GLOBALES
-   Las variables CSS (custom properties) se declaran en :root
-   para que sean accesibles desde cualquier selector.
-   Se usan con var(--nombre).
    ════════════════════════════════════════════════════════ */
 :root {
   --primary: #710014;
@@ -103,7 +100,6 @@ header {
 .fotoprincipal {
   width: 50vw;
   min-height: 100vh;
-  object-fit: cover;
   flex-shrink: 0;
 }
 
@@ -117,28 +113,7 @@ header {
   padding: 2rem;
 }
 
-.edition {
-  background-color: var(--primary);
-  border: none;
-  font-size: 1rem;
-  color: var(--text);
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-}
-
-.edition:hover {
-  background-color: var(--bglight);
-}
-
-.introtitle {
-  font-size: clamp(2rem, 5vw, 4rem);
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.introtitle:hover {
+.title:hover {
   color: var(--accent);
   transform: translateY(-5px);
 }
@@ -174,21 +149,6 @@ header {
   align-items: center;
   flex-direction: column;
   padding: 2rem 0;
-}
-
-.calendar {
-  background-color: var(--primary);
-  border: none;
-  font-size: 1rem;
-  color: var(--text);
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-}
-
-.calendar:hover {
-  background-color: var(--primary-light);
 }
 
 .horario-tarjetas {
@@ -342,20 +302,30 @@ footer {
 }
 
 .sidebarbtn {
-  margin-top: 3rem;
+  display: inline-block;
+  margin-top: 1rem;
   text-decoration: none;
+  border: none;
+  font-size: 0.9rem;
   color: var(--text);
+  cursor: pointer;
+  padding: 8px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  width: 100%;
+
 }
 
 .sidebarbtn:hover {
   color: var(--primary-light);
+  background-color: var(--bglight);
+  
 }
 
 /* ════════════════════════════════════════════════════════
    FORMULARIO
    ════════════════════════════════════════════════════════ */
 #form {
-  background: #181818;
   padding: 16px;
   border-radius: 12px;
   margin-top: 30px;
@@ -371,7 +341,14 @@ footer {
 .field {
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+  padding: 8px;
   gap: 6px;
+}
+
+.field:hover {
+  background-color: var(--bglight);
+  color: var(--accent);
 }
 
 input,

@@ -24,31 +24,10 @@
         <a class="sidebarbtn" href="index.html">Inicio</a>
         <a class="sidebarbtn" href="multimedia.html">Multimedia</a>
         <a class="sidebarbtn" href="restaurantes.html">Ver restaurantes</a>
-        <section class="sidebarbtn"  id="form">
-
-            <form class="contact-form" id="contactForm" novalidate>
-                <div class="field">
-                    <label class="textarea" for="name">Name <span class="req">*</span></label>
-                    <input type="text"name="name" placeholder="Jane Doe" required>
-                </div>
-                <div class="field">
-                        <label class="textarea" for="email">Email <span class="req">*</span></label>
-                        <input type="email" name="email" placeholder="jane@email.com" required>
-                </div>
-                <div class="field">
-                    <label class="textarea" for="phone">Phone number</label>
-                    <input type="tel" name="phone" placeholder="+57 300 000 0000">
-                </div>
-                <div class="field">
-                    <label class="textarea" for="message">What do you want to talk about?</label>
-                    <textarea name="message" placeholder="Briefly describe your project or question..."></textarea>
-                </div>
-                <div class="submit-row">
-                    <button class="submitbtn" type="submit">Send request →</button>
-                </div>
-            </form>
-        </section>
-    
+        <a class="sidebarbtn" href="index.html#schedule">Programa</a>
+        <a class="sidebarbtn" href="index.html#chefs">Nuestros Chefs</a>
+        <a class="sidebarbtn" href="index.html#form">Contacto</a>
+       
     </section>
 
 
@@ -57,7 +36,7 @@
 
             <div class="textoprincipal">
 
-                <span class="edition">Edición 2026 - Barranquilla</span>
+                <span class="btn">Edición 2026 - Barranquilla</span>
 
                 <h1 class="introtitle">El sabor de oriente en el Caribe</h1>
 
@@ -70,13 +49,13 @@
             <img src="assets/sushi.png" class="fotoprincipal">
         </section>
 
-        <section class="schedule">
+        <section id="schedule" class="schedule">
 
-            <div class="calendar">
+            <div class="btn">
 
                 <i class="fa-regular fa-calendar-check"></i>
 
-                <span class="subtitulo">Programa</span>
+                <span >Programa</span>
 
             </div>
 
@@ -187,9 +166,9 @@
 
         </section>
 
-        <section class="chefs">
+        <section id="chefs" class="chefs">
 
-            <h2 class="introtitle">Nuestros Chefs</h2>
+            <h2 class="title">Nuestros Chefs</h2>
             <table>
                 <thead>
                     <tr>
@@ -245,6 +224,33 @@
             </table>
 
 
+        </section>
+
+         <section id="form">
+
+            <h1 class="title">Contacto</h1>
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="field">
+                    <label class="textarea" for="name">Name <span class="req">*</span></label>
+                    <input type="text"name="name" placeholder="Jane Doe" required>
+                </div>
+                <div class="field">
+                        <label class="textarea" for="email">Email <span class="req">*</span></label>
+                        <input type="email" name="email" placeholder="jane@email.com" required>
+                </div>
+                <div class="field">
+                    <label class="textarea" for="phone">Phone number</label>
+                    <input type="tel" name="phone" placeholder="+57 300 000 0000">
+                </div>
+                <div class="field">
+                    <label class="textarea" for="message">What do you want to talk about?</label>
+                    <textarea name="message" placeholder="Briefly describe your project or question..."></textarea>
+                </div>
+                <div class="submit-row">
+                    <button class="submitbtn" type="submit">Send request →</button>
+                </div>
+            </form>
         </section>
 
     </main> 
