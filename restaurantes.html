@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:wght@300;400&family=Raleway:wght@300;400;500&family=Montserrat:wght@300;400;500&family=DM+Serif+Display:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+    <header>
+        <section class="city">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Barranquilla</span>
+        </section>
+        <h1 class="festival-name">Sushi Fest</h1>
+        <button id="togglebtn" onclick="toggleSidebar()">☰</button>
+    </header>
+
+    <section id="sidebar">
+        <a class="sidebarbtn" href="index.html">Inicio</a>
+        <a class="sidebarbtn" href="multimedia.html">Multimedia</a>
+        <a class="sidebarbtn" href="restaurantes.html">Ver restaurantes</a>
+        <section class="sidebarbtn"  id="form">
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="field">
+                    <label class="textarea" for="name">Name <span class="req">*</span></label>
+                    <input type="text"name="name" placeholder="Jane Doe" required>
+                </div>
+                <div class="field">
+                        <label class="textarea" for="email">Email <span class="req">*</span></label>
+                        <input type="email" name="email" placeholder="jane@email.com" required>
+                </div>
+                <div class="field">
+                    <label class="textarea" for="phone">Phone number</label>
+                    <input type="tel" name="phone" placeholder="+57 300 000 0000">
+                </div>
+                <div class="field">
+                    <label class="textarea" for="message">What do you want to talk about?</label>
+                    <textarea name="message" placeholder="Briefly describe your project or question..."></textarea>
+                </div>
+                <div class="submit-row">
+                    <button class="submitbtn" type="submit">Send request →</button>
+                </div>
+            </form>
+        </section>
+    
+    </section>
+
+    <section class="concept">
+
+        <h1 class="introtitle">Restaurantes</h1>
+
+        <p class="description">El Sushi Fest Barranquilla es un festival gastronómico participativo donde los mejores
+            restaurantes de la ciudad presentan un rollo de autor creado exclusivamente para el evento. El público vota
+            y decide al ganador.</p>
+        <p class="description">Celebramos la excelencia culinaria a través de la creatividad,
+        honrando la identidad cultural y creando experiencias memorables,
+        con un compromiso real hacia la sostenibilidad y la comunidad.</p>
+        <h2 class="item-title">Nuestros Valores</h2>
+        <ul class="lista">
+            <li>Calidad culinaria</li>
+            <li>Creatividad e innovación</li>
+            <li>Experiencia del cliente</li>
+            <li>Identidad cultural</li>
+            <li>Excelencia organizativa</li>
+        </ul>
+
+ 
+        <div style="position: relative;">
+            <button type="button" onclick="scrollCarrusel('left')" class="carrusel-arrow carrusel-arrow-left">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button type="button" onclick="scrollCarrusel('right')" class="carrusel-arrow carrusel-arrow-right"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+            <div class="carrusel" id="carrusel">
+
+                <div class="cardcarrusel">
+                    <img src="assets/teriyaki.jpg" class="foto-carrusel">
+                    <div class="overlay">
+                        <h3 class="item-title">Teriyaki</h3>
+                    </div>
+                </div>
+
+                <div class="cardcarrusel">
+                    <img src="assets/omasake.jpg" class="foto-carrusel">
+                    <div class="overlay">
+                        <h3 class="item-title">Omasake</h3>
+                    </div>
+                </div>
+
+                <div class="cardcarrusel">
+                    <img src="assets/kizuna.jpg" class="foto-carrusel">
+                    <div class="overlay">
+                        <h3 class="item-title">Kisuna Cocina Nikkei</h3>
+                    </div>
+                </div>
+
+                <div class="cardcarrusel">
+                    <img src="assets/umi.jpg" class="foto-carrusel">
+                    <div class="overlay">
+                        <h3 class="item-title">Umi Sushi</h3>
+                    </div>
+                </div>
+
+                                <div class="cardcarrusel">
+                    <img src="assets/hamachi.jpg" class="foto-carrusel">
+                    <div class="overlay">
+                        <h3 class="item-title">Hamachi Cocina Nikkei</h3>
+                    </div>
+                </div>
+
+                <div class="cardcarrusel">
+                    <img src="assets/noa.jpg" class="foto-carrusel">
+                    <div class="overlay">
+                        <h3 class="item-title">Noa Sushi</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <article class="contact">
+
+            <section class="email">
+                <i class="fa-solid fa-envelope-open"></i>
+                <span>
+                    hola@sushifestbaq.com
+                </span>
+            </section>
+
+            <section class="numero">
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    +57 300 123 4567
+                </span>
+            </section>
+
+            <section class="lugar">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                    Barranquilla, Atlántico
+                </span>
+            </section>
+        </article>
+
+
+        <article class="links">
+            <a class="link" href="multimedia.html">Multimedia</a>
+            <a class="link" href="restaurantes.html">Ver restaurantes</a>
+        </article>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

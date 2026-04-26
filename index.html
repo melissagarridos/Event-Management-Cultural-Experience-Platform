@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:wght@300;400&family=Raleway:wght@300;400;500&family=Montserrat:wght@300;400;500&family=DM+Serif+Display:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <section class="city">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Barranquilla</span>
+        </section>
+        <h1 class="festival-name">Sushi Fest</h1>
+        <button id="togglebtn" onclick="toggleSidebar()">☰</button>
+    </header>
+
+    <section id="sidebar">
+        <a class="sidebarbtn" href="index.html">Inicio</a>
+        <a class="sidebarbtn" href="multimedia.html">Multimedia</a>
+        <a class="sidebarbtn" href="restaurantes.html">Ver restaurantes</a>
+        <section class="sidebarbtn"  id="form">
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="field">
+                    <label class="textarea" for="name">Name <span class="req">*</span></label>
+                    <input type="text"name="name" placeholder="Jane Doe" required>
+                </div>
+                <div class="field">
+                        <label class="textarea" for="email">Email <span class="req">*</span></label>
+                        <input type="email" name="email" placeholder="jane@email.com" required>
+                </div>
+                <div class="field">
+                    <label class="textarea" for="phone">Phone number</label>
+                    <input type="tel" name="phone" placeholder="+57 300 000 0000">
+                </div>
+                <div class="field">
+                    <label class="textarea" for="message">What do you want to talk about?</label>
+                    <textarea name="message" placeholder="Briefly describe your project or question..."></textarea>
+                </div>
+                <div class="submit-row">
+                    <button class="submitbtn" type="submit">Send request →</button>
+                </div>
+            </form>
+        </section>
+    
+    </section>
+
+
+    <main>
+        <section class="principal">
+
+            <div class="textoprincipal">
+
+                <span class="edition">Edición 2026 - Barranquilla</span>
+
+                <h1 class="introtitle">El sabor de oriente en el Caribe</h1>
+
+                <p class="description">Cinco días de gastronomía japonesa fusionada con el espíritu del Caribe colombiano. Más de 20 restaurantes compiten por el mejor rollo de autor.</p>
+
+                <a class="btn" href="restaurantes.html">Restaurantes</a>
+                <a class="btn" href="multimedia.html">Galería</a>
+            </div>
+
+            <img src="assets/sushi.png" class="fotoprincipal">
+        </section>
+
+        <section class="schedule">
+
+            <div class="calendar">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span class="subtitulo">Programa</span>
+
+            </div>
+
+            <h2 class="title">Horarios y eventos</h2>
+
+            <p class="description">Del 15 al 19 de mayo de 2026. Cada día trae una experiencia diferente: talleres, catas, shows y la ruta de restaurantes participantes.</p>
+
+            <div class="horario-tarjetas">
+
+                <div class="tarjeta">
+
+                    <img src="assets/rest3.jpeg" class="photohorario">
+                    <span class="fecha">Jue 15 mayo · 6:00 PM</span>
+
+                    <span class="evento">Ceremonia de apertura</span>
+
+                    <section class="lugar">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Hamachi Sushi
+                        </span>
+                    </section>
+
+                    <span class="tipoevento">Show</span>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="assets/rest1.jpeg" class="photohorario">
+                    <span class="fecha">Vie 16 mayo · 10:00 AM</span>
+
+                    <span class="evento">Taller: Rollos de autor</span>
+
+                    <section class="lugar">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Hamachi Sushi
+                        </span>
+                    </section>
+
+                    <span class="tipoevento">Taller</span>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="assets/rest2.jpg" class="photohorario">
+                    <span class="fecha">Sáb 17 mayo · 3:00 PM</span>
+
+                    <span class="evento">Cata de sake y mariscos</span>
+
+                    <section class="lugar">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Noa Sushi
+                        </span>
+                    </section>
+
+                    <span class="tipoevento">Cata</span>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="assets/rest4.jpg" class="photohorario">
+                    <span class="texto">Dom 18 mayo · 12:00 PM</span>
+
+                    <span class="texto">Ruta gastronómica barranquillera</span>
+
+                    <section class="texto" class="lugar">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Varios
+                        </span>
+                    </section>
+
+                    <span class="texto" class="tipoevento">Ruta</span>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="assets/rest5.jpeg" class="photohorario">
+                    <span class="fecha">Dom 18 mayo · 6:00 PM</span>
+
+                    <span class="evento">Cata de licores y sushi</span>
+
+                    <section class="lugar">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Teriyaki
+                        </span>
+                    </section>
+
+                    <span class="tipoevento">Ruta</span>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="assets/rest6.jpeg" class="photohorario">
+                    <span class="fecha">Lun 19 mayo · 7:00 PM</span>
+
+                    <span class="evento">Gran final y premiación</span>
+
+                    <section class="lugar">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Puerta de Oro
+                        </span>
+                    </section>
+
+                    <span class="tipoevento">Premiación</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="chefs">
+
+            <h2 class="introtitle">Nuestros Chefs</h2>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Especialidad</th>
+                    <th>Experiencia (años)</th>
+                    <th>País</th>
+                    <th>Plato estrella</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                    <td>Hiroshi Tanaka</td>
+                    <td>Omakase</td>
+                    <td>25</td>
+                    <td>Japón</td>
+                    <td>Nigiri de atún toro</td>
+                    </tr>
+
+                    <tr>
+                    <td>Kenji Sato</td>
+                    <td>Sushi tradicional</td>
+                    <td>18</td>
+                    <td>Japón</td>
+                    <td>Salmón con yuzu</td>
+                    </tr>
+
+                    <tr>
+                    <td>María López</td>
+                    <td>Sushi fusión</td>
+                    <td>10</td>
+                    <td>Colombia</td>
+                    <td>Roll tropical de mango</td>
+                    </tr>
+
+                    <tr>
+                    <td>David Kim</td>
+                    <td>Sushi moderno</td>
+                    <td>12</td>
+                    <td>Corea del Sur</td>
+                    <td>Roll picante de cangrejo</td>
+                    </tr>
+
+                    <tr>
+                    <td>Lucas Ferreira</td>
+                    <td>Sushi creativo</td>
+                    <td>8</td>
+                    <td>Brasil</td>
+                    <td>Roll de tempura con maracuyá</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </section>
+
+    </main> 
+
+    <footer>
+
+        <article class="contact">
+
+            <section class="email">
+                <i class="fa-solid fa-envelope-open"></i>
+                <span>
+                    hola@sushifestbaq.com
+                </span>
+            </section>
+
+            <section class="numero">
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    +57 300 123 4567
+                </span>
+            </section>
+
+            <section class="lugar">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                    Barranquilla, Atlántico
+                </span>
+            </section>
+         </article>
+
+
+        <article class="links">
+            <a class="link" href="multimedia.html">Multimedia</a>
+            <a class="link" href="restaurantes.html">Ver restaurantes</a>
+        </article>
+
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
