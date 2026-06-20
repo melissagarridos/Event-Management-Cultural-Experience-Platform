@@ -7,6 +7,9 @@
 A responsive web application designed to showcase culinary experiences, event information, and cultural activities through an engaging digital experience.
 
 <br>
+<img src="assets/landing.png" alt="Gastronomic Festival Experience Platform" width="600">
+
+<br>
 
 <a href="https://melissagarridos.github.io/">Portfolio</a> •
 <a href="https://www.linkedin.com/in/melissavgs/">LinkedIn</a> •
