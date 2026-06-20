@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pageTitle">Sushi Fest</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:wght@300;400&family=Raleway:wght@300;400;500&family=Montserrat:wght@300;400;500&family=DM+Serif+Display:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -17,238 +16,177 @@
             <span>Barranquilla</span>
         </section>
         <a class="festival-name" href="index.html">Sushi Fest</a>
-        <button id="togglebtn" onclick="toggleSidebar()">☰</button>
+        <div class="header-buttons">
+            <button id="langBtn" type="button" onclick="toggleLanguage()">ES</button>
+            <button id="togglebtn" onclick="toggleSidebar()">☰</button>
+        </div>
     </header>
 
     <section id="sidebar">
-        <a class="sidebarbtn" href="index.html">Inicio</a>
-        <a class="sidebarbtn" href="multimedia.html">Multimedia</a>
-        <a class="sidebarbtn" href="restaurantes.html">Ver restaurantes</a>
-        <a class="sidebarbtn" href="index.html#schedule">Programa</a>
-        <a class="sidebarbtn" href="index.html#chefs">Nuestros Chefs</a>
-        <a class="sidebarbtn" href="index.html#form">Contacto</a>
-       
+        <a class="sidebarbtn" data-i18n="navHome" href="index.html">Home</a>
+        <a class="sidebarbtn" data-i18n="navMultimedia" href="multimedia.html">Multimedia</a>
+        <a class="sidebarbtn" data-i18n="navRestaurants" href="restaurantes.html">View restaurants</a>
+        <a class="sidebarbtn" data-i18n="navSchedule" href="index.html#schedule">Schedule</a>
+        <a class="sidebarbtn" data-i18n="navChefs" href="index.html#chefs">Our Chefs</a>
+        <a class="sidebarbtn" data-i18n="navContact" href="index.html#form">Contact</a>
     </section>
-
 
     <main>
         <section class="principal">
-
             <div class="textoprincipal">
-
-                <span class="btn">Edición 2026 - Barranquilla</span>
-
-                <h1 class="introtitle">El sabor de oriente en el Caribe</h1>
-
-                <p class="description">Cinco días de gastronomía japonesa fusionada con el espíritu del Caribe colombiano. Más de 20 restaurantes compiten por el mejor rollo de autor.</p>
-
-                <a class="btn" href="restaurantes.html">Restaurantes</a>
-                <a class="btn" href="multimedia.html">Galería</a>
+                <span class="btn" data-i18n="heroEdition">2026 Edition - Barranquilla</span>
+                <h1 class="introtitle" data-i18n="heroTitle">The taste of the East in the Caribbean</h1>
+                <p class="description" data-i18n="heroDescription">Five days of Japanese cuisine fused with Colombian Caribbean spirit. More than 20 restaurants compete for the best signature roll.</p>
+                <a class="btn" data-i18n="heroRestaurants" href="restaurantes.html">Restaurants</a>
+                <a class="btn" data-i18n="heroGallery" href="multimedia.html">Gallery</a>
             </div>
-
-            <img src="assets/sushi.png" class="fotoprincipal">
+            <img src="assets/sushi.png" class="fotoprincipal" alt="Sushi festival main image">
         </section>
 
         <section id="schedule" class="schedule">
-
             <div class="btn">
-
                 <i class="fa-regular fa-calendar-check"></i>
-
-                <span >Programa</span>
-
+                <span data-i18n="scheduleLabel">Schedule</span>
             </div>
-
-            <h2 class="title">Horarios y eventos</h2>
-
-            <p class="description">Del 15 al 19 de mayo de 2026. Cada día trae una experiencia diferente: talleres, catas, shows y la ruta de restaurantes participantes.</p>
-
+            <h2 class="title" data-i18n="scheduleTitle">Schedule & events</h2>
+            <p class="description" data-i18n="scheduleDescription">May 15–19, 2026. Each day brings a different experience: workshops, tastings, shows and the route of participating restaurants.</p>
             <div class="horario-tarjetas">
-
                 <div class="tarjeta">
-
-                    <img src="assets/rest3.jpeg" class="photohorario">
-                    <span class="fecha">Jue 15 mayo · 6:00 PM</span>
-
-                    <span class="evento">Ceremonia de apertura</span>
-
+                    <img src="assets/rest3.jpeg" class="photohorario" alt="Opening ceremony">
+                    <span class="fecha" data-i18n="event1Date">Thu May 15 · 6:00 PM</span>
+                    <span class="evento" data-i18n="event1Name">Opening ceremony</span>
                     <section class="lugar">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>
-                            Hamachi Sushi
-                        </span>
+                        <span data-i18n="event1Place">Hamachi Sushi</span>
                     </section>
-
-                    <span class="tipoevento">Show</span>
+                    <span class="tipoevento" data-i18n="event1Type">Show</span>
                 </div>
-
                 <div class="tarjeta">
-                    <img src="assets/rest1.jpeg" class="photohorario">
-                    <span class="fecha">Vie 16 mayo · 10:00 AM</span>
-
-                    <span class="evento">Taller: Rollos de autor</span>
-
+                    <img src="assets/rest1.jpeg" class="photohorario" alt="Signature roll workshop">
+                    <span class="fecha" data-i18n="event2Date">Fri May 16 · 10:00 AM</span>
+                    <span class="evento" data-i18n="event2Name">Workshop: signature rolls</span>
                     <section class="lugar">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>
-                            Hamachi Sushi
-                        </span>
+                        <span data-i18n="event2Place">Hamachi Sushi</span>
                     </section>
-
-                    <span class="tipoevento">Taller</span>
+                    <span class="tipoevento" data-i18n="event2Type">Workshop</span>
                 </div>
-
                 <div class="tarjeta">
-                    <img src="assets/rest2.jpg" class="photohorario">
-                    <span class="fecha">Sáb 17 mayo · 3:00 PM</span>
-
-                    <span class="evento">Cata de sake y mariscos</span>
-
+                    <img src="assets/rest2.jpg" class="photohorario" alt="Sake tasting">
+                    <span class="fecha" data-i18n="event3Date">Sat May 17 · 3:00 PM</span>
+                    <span class="evento" data-i18n="event3Name">Sake & seafood tasting</span>
                     <section class="lugar">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>
-                            Noa Sushi
-                        </span>
+                        <span data-i18n="event3Place">Noa Sushi</span>
                     </section>
-
-                    <span class="tipoevento">Cata</span>
+                    <span class="tipoevento" data-i18n="event3Type">Tasting</span>
                 </div>
-
                 <div class="tarjeta">
-                    <img src="assets/rest4.jpg" class="photohorario">
-                    <span class="texto">Dom 18 mayo · 12:00 PM</span>
-
-                    <span class="texto">Ruta gastronómica barranquillera</span>
-
-                    <section class="texto" class="lugar">
+                    <img src="assets/rest4.jpg" class="photohorario" alt="Food tour">
+                    <span class="texto" data-i18n="event4Date">Sun May 18 · 12:00 PM</span>
+                    <span class="texto" data-i18n="event4Name">Barranquilla food tour</span>
+                    <section class="texto lugar">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>
-                            Varios
-                        </span>
+                        <span data-i18n="event4Place">Various</span>
                     </section>
-
-                    <span class="texto" class="tipoevento">Ruta</span>
+                    <span class="texto tipoevento" data-i18n="event4Type">Tour</span>
                 </div>
-
                 <div class="tarjeta">
-                    <img src="assets/rest5.jpeg" class="photohorario">
-                    <span class="fecha">Dom 18 mayo · 6:00 PM</span>
-
-                    <span class="evento">Cata de licores y sushi</span>
-
+                    <img src="assets/rest5.jpeg" class="photohorario" alt="Sushi and liquor tasting">
+                    <span class="fecha" data-i18n="event5Date">Sun May 18 · 6:00 PM</span>
+                    <span class="evento" data-i18n="event5Name">Liquor and sushi tasting</span>
                     <section class="lugar">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>
-                            Teriyaki
-                        </span>
+                        <span data-i18n="event5Place">Teriyaki</span>
                     </section>
-
-                    <span class="tipoevento">Ruta</span>
+                    <span class="tipoevento" data-i18n="event5Type">Tasting</span>
                 </div>
-
                 <div class="tarjeta">
-                    <img src="assets/rest6.jpeg" class="photohorario">
-                    <span class="fecha">Lun 19 mayo · 7:00 PM</span>
-
-                    <span class="evento">Gran final y premiación</span>
-
+                    <img src="assets/rest6.jpeg" class="photohorario" alt="Awards ceremony">
+                    <span class="fecha" data-i18n="event6Date">Mon May 19 · 7:00 PM</span>
+                    <span class="evento" data-i18n="event6Name">Grand finale & awards</span>
                     <section class="lugar">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>
-                            Puerta de Oro
-                        </span>
+                        <span data-i18n="event6Place">Puerta de Oro</span>
                     </section>
-
-                    <span class="tipoevento">Premiación</span>
+                    <span class="tipoevento" data-i18n="event6Type">Awards</span>
                 </div>
-
             </div>
-
         </section>
 
         <section id="chefs" class="chefs">
-
-            <h2 class="title">Nuestros Chefs</h2>
+            <h2 class="title" data-i18n="chefsTitle">Our Chefs</h2>
             <table>
                 <thead>
                     <tr>
-                    <th>Nombre</th>
-                    <th>Especialidad</th>
-                    <th>Experiencia (años)</th>
-                    <th>País</th>
-                    <th>Plato estrella</th>
+                    <th data-i18n="tableName">Name</th>
+                    <th data-i18n="tableSpecialty">Specialty</th>
+                    <th data-i18n="tableExperience">Experience (years)</th>
+                    <th data-i18n="tableCountry">Country</th>
+                    <th data-i18n="tableSignature">Signature dish</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
                     <td>Hiroshi Tanaka</td>
                     <td>Omakase</td>
                     <td>25</td>
-                    <td>Japón</td>
-                    <td>Nigiri de atún toro</td>
+                    <td>Japan</td>
+                    <td>Tuna toro nigiri</td>
                     </tr>
-
                     <tr>
                     <td>Kenji Sato</td>
-                    <td>Sushi tradicional</td>
+                    <td>Traditional sushi</td>
                     <td>18</td>
-                    <td>Japón</td>
-                    <td>Salmón con yuzu</td>
+                    <td>Japan</td>
+                    <td>Salmon with yuzu</td>
                     </tr>
-
                     <tr>
                     <td>María López</td>
-                    <td>Sushi fusión</td>
+                    <td>Fusion sushi</td>
                     <td>10</td>
                     <td>Colombia</td>
-                    <td>Roll tropical de mango</td>
+                    <td>Mango tropical roll</td>
                     </tr>
-
                     <tr>
                     <td>David Kim</td>
-                    <td>Sushi moderno</td>
+                    <td>Modern sushi</td>
                     <td>12</td>
-                    <td>Corea del Sur</td>
-                    <td>Roll picante de cangrejo</td>
+                    <td>South Korea</td>
+                    <td>Spicy crab roll</td>
                     </tr>
-
                     <tr>
                     <td>Lucas Ferreira</td>
-                    <td>Sushi creativo</td>
+                    <td>Creative sushi</td>
                     <td>8</td>
-                    <td>Brasil</td>
-                    <td>Roll de tempura con maracuyá</td>
+                    <td>Brazil</td>
+                    <td>Tempura roll with passion fruit</td>
                     </tr>
                 </tbody>
             </table>
-
-
         </section>
 
          <section id="form">
-
-            <h1 class="title">Contacto</h1>
-
+            <h1 class="title" data-i18n="contactTitle">Contact</h1>
             <form class="contact-form" id="contactForm" novalidate>
                 <div class="field">
-                    <label class="textarea" for="name">Name <span class="req">*</span></label>
-                    <input type="text"name="name" placeholder="Jane Doe" required>
+                    <label class="textarea" for="name" data-i18n="formName">Name <span class="req">*</span></label>
+                    <input type="text" name="name" data-i18n-placeholder="formNamePlaceholder" placeholder="Jane Doe" required>
                 </div>
                 <div class="field">
-                        <label class="textarea" for="email">Email <span class="req">*</span></label>
-                        <input type="email" name="email" placeholder="jane@email.com" required>
+                        <label class="textarea" for="email" data-i18n="formEmail">Email <span class="req">*</span></label>
+                        <input type="email" name="email" data-i18n-placeholder="formEmailPlaceholder" placeholder="jane@email.com" required>
                 </div>
                 <div class="field">
-                    <label class="textarea" for="phone">Phone number</label>
-                    <input type="tel" name="phone" placeholder="+57 300 000 0000">
+                    <label class="textarea" for="phone" data-i18n="formPhone">Phone number</label>
+                    <input type="tel" name="phone" data-i18n-placeholder="formPhonePlaceholder" placeholder="+57 300 000 0000">
                 </div>
                 <div class="field">
-                    <label class="textarea" for="message">What do you want to talk about?</label>
-                    <textarea name="message" placeholder="Briefly describe your project or question..."></textarea>
+                    <label class="textarea" for="message" data-i18n="formMessage">What do you want to talk about?</label>
+                    <textarea name="message" data-i18n-placeholder="formMessagePlaceholder" placeholder="Briefly describe your project or question..."></textarea>
                 </div>
                 <div class="submit-row">
-                    <button class="submitbtn" type="submit">Send request →</button>
+                    <button class="submitbtn" type="submit" data-i18n="formSubmit">Send request →</button>
                 </div>
             </form>
         </section>
@@ -256,23 +194,19 @@
     </main> 
 
     <footer>
-
         <article class="contact">
-
             <section class="email">
                 <i class="fa-solid fa-envelope-open"></i>
                 <span>
                     hola@sushifestbaq.com
                 </span>
             </section>
-
             <section class="numero">
                 <i class="fa-solid fa-phone"></i>
                 <span>
                     +57 300 123 4567
                 </span>
             </section>
-
             <section class="lugar">
                 <i class="fa-solid fa-location-dot"></i>
                 <span>
@@ -281,10 +215,9 @@
             </section>
          </article>
 
-
         <article class="links">
-            <a class="link" href="multimedia.html">Multimedia</a>
-            <a class="link" href="restaurantes.html">Ver restaurantes</a>
+            <a class="link" data-i18n="footerMultimedia" href="multimedia.html">Multimedia</a>
+            <a class="link" data-i18n="footerRestaurants" href="restaurantes.html">View restaurants</a>
         </article>
 
     </footer>

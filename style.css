@@ -56,6 +56,27 @@ header {
   font-size: clamp(16px,2rem,40px);
 }
 
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-buttons button {
+  border: none;
+  background: #1b1b1b;
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header-buttons button:hover {
+  color: var(--primary-light);
+  background: #2a2a2a;
+}
+
 .festival-name:hover {
   color: var(--primary-light);
 }
